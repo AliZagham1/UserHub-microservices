@@ -1,0 +1,14 @@
+### Create a new patient entity
+POST http://lb-2003de02.elb.localhost.localstack.cloud:4004/api/patients
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name" : "kafka account6",
+  "email": "kafka_test6@example.com",
+  "address": "128 up kafka",
+  "dateOfBirth": "1996-06-08",
+  "registeredDate": "2025-09-22"
+}
+
+###
