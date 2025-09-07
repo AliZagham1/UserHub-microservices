@@ -1,7 +1,7 @@
-# HealthHub - User Lifecycle Management Platform
+# UserHub - User Lifecycle Management Platform
 ## Overview
 
-HealthHub manages complete user lifecycles through distributed microservices running on AWS ECS. The system handles user registration, billing automation, and analytics processing with event-driven communication between services.
+UserHub manages complete user lifecycles through distributed microservices running on AWS ECS. The system handles user registration, billing automation, and analytics processing with event-driven communication between services.
 # Objectives
 This project addresses common challenges in user management systems:
 
@@ -19,7 +19,7 @@ Handles user login, JWT token management, and access control. Validates requests
 
 ## API Gateway
 Central routing service that distributes incoming requests to appropriate microservices. Implements rate limiting and request logging.
-## Patient Service
+## Patient Service (Example-Possible Domain)
 Manages user profiles, registration workflows, and account updates. Publishes user creation events to Kafka topics.
 ## Billing Service
 Subscribes to user creation events and automatically generates billing records. 
